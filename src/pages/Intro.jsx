@@ -10,7 +10,7 @@ const Intro = () => {
     return (
         <S.Background bgImg={track}>
             <S.F1Car onClick={() => navigate("/profile")}>
-                <img src={redbull} />
+                <img src={redbull} alt="" />
             </S.F1Car>
         </S.Background>
     );

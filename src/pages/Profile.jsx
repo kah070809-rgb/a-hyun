@@ -5,7 +5,6 @@ import img from "./f1.jpg";
 
 const Profile = () => {
     const [좋아요, 좋아요변경] = useState(0);
-    const navigate = useNavigate();
 
     return (
         <>
