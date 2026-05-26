@@ -143,3 +143,24 @@ export const Background = styled.article`
         transform: translateY(-10px) scale(1.2);
     }
 `;
+
+export const SideCar = styled.span`
+    position: absolute;
+
+    top: ${(props) => props.topPos || "80%"};
+    left: ${(props) => props.leftPos || "50%"};
+
+    transform: translate(-50%, -50%);
+    z-index: 9;
+
+    animation: ${dash} 2.2s cubic-bezier(0.25, 1, 0.5, 1.2) forwards;
+    animation-delay: ${(props) => props.delay || "0s"};
+    animation-fill-mode: backwards;
+
+    & img {
+        max-width: 40%;
+        height: auto;
+
+        filter: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.3));
+    }
+`;
